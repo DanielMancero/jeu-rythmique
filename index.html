@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Reconnaissance rythmique</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="jeu">
+
+        <h1>Reconnaissance rythmique</h1>
+
+        <div id="question">
+            Question 1 / 10
+        </div>
+
+        <p id="message">
+            Écoute le rythme
+        </p>
+
+        <button
+            id="ecouter"
+            class="bouton-ecouter"
+        >
+            ▶ ÉCOUTER
+        </button>
+
+        <div
+            id="reponses"
+            class="reponses"
+        ></div>
+
+        <div id="score">
+            Score : 0
+        </div>
+
+        <button
+            id="suivant"
+            class="bouton-suivant"
+            disabled
+        >
+            QUESTION SUIVANTE
+        </button>
+
+    </main>
+
+
+    <!-- Fenêtre de félicitations -->
+
+    <div
+        id="felicitations"
+        class="felicitations cache"
+    >
+
+        <canvas id="confettis"></canvas>
+
+        <div class="bravo">
+
+            <h2>BRAVO !</h2>
+
+            <div class="score-parfait">
+                10 / 10
+            </div>
+
+            <p>
+                Excellent travail rythmique !
+            </p>
+
+            <button id="rejouer">
+                REJOUER
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Chargement du programme JavaScript -->
+    <script src="jeu.js"></script>
+
+</body>
+</html>
